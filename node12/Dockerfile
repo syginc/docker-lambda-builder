@@ -1,7 +1,7 @@
 FROM amazonlinux:2.0.20191016.0
 
 RUN yum -y groupinstall 'Development Tools' && \
-  yum -y install ImageMagick-devel python2-pip python3 python3-pip nasm openssh-clients git && \
+  yum -y install ImageMagick-devel python2-pip python3 python3-pip nasm && \
   pip-2.7 install pipenv && \
   pip-3.7 install pipenv && \
   curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - && \
