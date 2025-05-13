@@ -13,8 +13,8 @@ jobs:
     uses: syginc/actions-util/.github/workflows/ghcr-publish.yml@master
     with:
       image_name: ${{ github.repository_owner }}/lambda-builder
-      tag: node16
-      file_path: node16/Dockerfile
+      tag: node20
+      file_path: node20/Dockerfile
       context_path: .
     secrets:
       registry_username: ${{github.actor}}
